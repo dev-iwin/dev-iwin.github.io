@@ -1,17 +1,17 @@
 ---
 layout: single
-title:  "django와 app 구조"
+title:  "Django와 APP 구조"
 ---
 
-## django에서 app(application) 구조란?
+## Django에서 App(Application) 구조란?
 
-app은 django에서 사용하는 파이썬 패키지[^1]이다.
-django의 app은 모델(model), 뷰(view), 템플릿(template), URL매핑 등을 독자적으로 가지고 있다.
+app은 Django에서 사용하는 파이썬 패키지[^1]이다.
+Django의 app은 모델(model), 뷰(view), 템플릿(template), URL매핑 등을 독자적으로 가지고 있다.
 기능별로 app을 모듈화하여 개발하면 다음과 같은 장점이 있다.
 
 > \[1] 파이썬에서 모듈은 하나의 .py 파일을 가리키며, 패키지는 이러한 모듈들을 모은 컬렉션을 가리킨다. (출처 : [예제로 배우는 파이썬](http://pythonstudy.xyz/python/article/18-%ED%8C%A8%ED%82%A4%EC%A7%80))
 
-## app 구조가 필요한 이유는? (app의 장점)
+## App 구조가 필요한 이유는? (App의 장점)
 
 1. 재활용성 향상(과 개발기간 단축)
    - 추후 동일한/비슷한 기능을 개발할 때 기존 기능의 app을 가져와 사용할 수 있고,
