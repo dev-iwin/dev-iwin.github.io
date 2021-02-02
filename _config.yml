@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "Dev-iwin's Tech Blog"
 title_separator          : "-"
 subtitle                 : "Compete with myself, and be better than yesterday." # site tagline that appears below site title in masthead
-name                     : "iwin"
+name                     : "iwin's blog"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://dev-iwin.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "iwin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "I am better than yesterday."
   location         : "Somewhere"
   email            :
   links:
