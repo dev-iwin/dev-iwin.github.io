@@ -9,7 +9,7 @@ MTV 방식에서 템플릿 시스템의 HTML escape 내용이 계속 헷갈렸�
 
 ### 장고 프로젝트의 템플릿 코드가 사용자에게 보여지기까지의 과정
 
-1. 템플릿 코드 : HTML 코드 + 장고의 템플릿 코드
+1. 템플릿 코드 : 렌더링 전의 HTML 코드와 장고의 템플릿 코드
 2. 렌더링 : 템플릿 코드(1번)를 해석하는 과정으로, 이때 변수에 들어있는 HTML 태그는 auto escape 됨
 3. 템플릿 파일 : 렌더링(2번)의 결과물로 나오는 단순한 텍스트 파일(HTML, XML, JSON 등)
 4. 웹 브라우저 : HTML 파일(3번)을 해석하여 화면을 나타내는, 대표적인 웹 클라이언트
@@ -25,9 +25,9 @@ name = "<b>username"
 ```
 
 ```html
-<!-- template 폴더에 만든 .html 의 템플릿 코드-->
+<!-- template 폴더에 만든 .html 의 템플릿 코드(렌더링 전)-->
 {% with name="<b>username" %}
-Hello, {{ name }}
+Hello, {# {{ name }} #}
 ```
 
 | Process                | autoescape on                                                | autoescape off                                               |
