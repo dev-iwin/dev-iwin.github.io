@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Django의 핵심기능 03 - Template System 05 - HTML escape "
+title:  "Django의 핵심기능 03 - Template System 05 - auto HTML escape "
 ---
 
 MTV 방식에서 템플릿 시스템의 HTML escape 내용이 계속 헷갈렸다. 그 이유는, 렌더링의 결과인 템플릿 파일과 웹브라우저의 해석 결과인 최종 화면을 혼동했기 때문이다. 템플릿 코드는 두 번의 해석을 거친다는 점을 염두하고 HTML escape를 이해하자.
@@ -26,7 +26,7 @@ name = "<b>username"
 
 ```html
 <!-- template 폴더에 만든 .html 의 템플릿 코드-->
-Hello, {{ name }}
+Hello, &#123;&#123; name &#125;&#125;
 ```
 
 | Process                | autoescape on                                                | escape off                                                   |
