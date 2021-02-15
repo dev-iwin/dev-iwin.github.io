@@ -27,7 +27,7 @@ name = "<b>username"
 ```html
 <!-- template 폴더에 만든 .html 의 템플릿 코드(렌더링 전)-->
 {% with name="<b>username" %}
-Hello, {{ name|safe }}
+Hello, {{ name }}
 ```
 
 | Process                | autoescape on                                                | autoescape off                                               |
