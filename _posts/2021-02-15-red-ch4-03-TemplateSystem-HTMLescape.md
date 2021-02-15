@@ -24,11 +24,9 @@ MTV 방식에서 템플릿 시스템의 HTML escape 내용이 계속 헷갈렸�
 name = "<b>username"
 ```
 
-```html
+```
 <!-- template 폴더에 만든 .html 의 템플릿 코드(렌더링 전)-->
-{% autoescape off %}
 Hello, {{ name }}
-{% endautoescape %}
 ```
 
 | Process                | autoescape on                                                | autoescape off                                               |
