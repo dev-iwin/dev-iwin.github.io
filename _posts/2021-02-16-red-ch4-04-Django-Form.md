@@ -104,7 +104,7 @@ class ContactForm(forms.Form):
 
    - 그 외, 개발자가 직접 템플릿에 넣어줘야 하는 것들
 
-     : form 태그, submit 버튼, `{% csrf_token %}`, table 태그, ul 태그 등
+     : form 태그, submit 버튼,  csrf_token 템플릿 태그, table 태그, ul 태그 등
 
 ### 렌더링 결과
 
