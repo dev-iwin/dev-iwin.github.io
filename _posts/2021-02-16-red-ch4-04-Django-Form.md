@@ -7,7 +7,7 @@ title:  "Django 핵심기능 04 - Form 처리하기"
 
 ### 웹 개발에서의 폼이라는 용어
 
-: 폼은 사용자로부터 입력을 받기 위해 사용. (예 :텍스트 입력, 항목 선택)
+: 폼은 사용자로부터 입력을 받기 위해 사용 (예 :텍스트 입력, 항목 선택)
 
 1. HTML의 `<form>`을 지칭
 2. `<form>`을 만들어내는 장고의 Form 클래스를 지칭
@@ -19,7 +19,7 @@ title:  "Django 핵심기능 04 - Form 처리하기"
 1. input 태그 : 필수적인 요소
 2. action 속성 : 폼 데이터를 보낼 곳, 즉 URL을 지정
 3. method 속성 : HTML에서는 HTTP 프로토콜 중 GET 또는 POST만 가능한데, 장고에서는 폼의 데이터를 보낼 때 POST 방식만 사용
-4. CSRF 방지 기능 : 장고에서 제공해주는 `{% csrf_token %}` 템플릿 태그
+4. CSRF 방지 기능 : 장고에서 제공해주는 csrf_token 템플릿 태그
 
 ### 웹 서버에서의 일반적인 폼 처리
 
@@ -104,7 +104,7 @@ class ContactForm(forms.Form):
 
    - 그 외, 개발자가 직접 템플릿에 넣어줘야 하는 것들
 
-     : form 태그, submit 버튼, `{% csrf_token %}`, table 태그, ul 태그 등
+     : form 태그, submit 버튼,  csrf_token 템플릿 태그, table 태그, ul 태그 등
 
 ### 렌더링 결과
 
